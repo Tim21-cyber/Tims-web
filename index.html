@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Product Store</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          </header>
+
+          <section id="home" class="hero">
+            <h1>Welcome to MyStore</h1>
+            <p>Your one-stop shop for top quality products!</p>
+            <a href="#products" class="btn">Shop Now</a>
+            </section>
+
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="Assets/images.webp" alt="Product 1">
+                <h3>Nikon Camera</h3>
+                <p>$1250.79</p>
+                <button onclick="addToCart('Nikon Camera')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="Assets/Mizani-Press-Agent-Shampoo-33-8oz-Conditioner-33-8oz-Serum-3-38oz_f19adf5b-e127-43c6-a07f-5ff23fbe3348.0db1e3a4da981dc399d3f4d2cf84a320.webp" alt="Product 2">
+                <h3>Mizani Press Agent Shampoo</h3>
+                <p>$19.50</p>
+                <button onclick="addToCart('Mizani Shampoo')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="Assets/Hourglasses.webp" alt="Product 3">
+                <h3>Hour Glass</h3>
+                <p>$26.99</p>
+                <button onclick="addToCart('Hour Glass')">Add to Cart</button>
+            </div>
+        </div>
+        </section>
+        
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best products at the best prices to our customers worldwide.</p>
+        </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="message" required></textarea>
+            <button type="submit">Send</button>
+            </form>
+            </section>
+
+    <footer>
+        <p>&copy; 2025 MyStore. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        </footer>
 </body>
 </html>
